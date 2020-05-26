@@ -1,0 +1,2 @@
+# SwiftyLibSAM
+A Cocoapods library
