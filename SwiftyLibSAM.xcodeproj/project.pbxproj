@@ -15,6 +15,7 @@
 		45798EE6247DAF36000D60A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45798EE5247DAF36000D60A5 /* Assets.xcassets */; };
 		45798EE9247DAF36000D60A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45798EE7247DAF36000D60A5 /* LaunchScreen.storyboard */; };
 		45798EF4247DAF36000D60A5 /* SwiftyLibSAMExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45798EF3247DAF36000D60A5 /* SwiftyLibSAMExamplesUITests.swift */; };
+		45798EFD247DB597000D60A5 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45798EFC247DB597000D60A5 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		45798EEF247DAF36000D60A5 /* SwiftyLibSAMExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibSAMExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45798EF3247DAF36000D60A5 /* SwiftyLibSAMExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibSAMExamplesUITests.swift; sourceTree = "<group>"; };
 		45798EF5247DAF36000D60A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45798EFC247DB597000D60A5 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		45798EC1247DAEBF000D60A5 = {
 			isa = PBXGroup;
 			children = (
+				45798EFC247DB597000D60A5 /* SwiftyLib.swift */,
 				45798ECD247DAEBF000D60A5 /* SwiftyLibSAM */,
 				45798EDB247DAF35000D60A5 /* SwiftyLibSAMExamples */,
 				45798EF2247DAF36000D60A5 /* SwiftyLibSAMExamplesUITests */,
@@ -200,6 +203,7 @@
 				TargetAttributes = {
 					45798ECA247DAEBF000D60A5 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					45798ED9247DAF35000D60A5 = {
 						CreatedOnToolsVersion = 11.5;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45798EFD247DB597000D60A5 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +441,7 @@
 		45798ED4247DAEBF000D60A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ALMTCS2967;
@@ -453,6 +459,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		45798ED5247DAEBF000D60A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ALMTCS2967;
